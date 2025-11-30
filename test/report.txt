@@ -1,0 +1,6 @@
+{'issues': {'missing': ID       0
+Name     0
+Email    0
+Age      0
+City     0
+dtype: int64, 'duplicates': 0, 'outliers': {'ID': 0, 'Age': 0}}, 'fixes': ['250 duplicate rows removed.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.', 'Missing values filled.', '0 duplicate rows removed.', 'Outliers handled.']}
