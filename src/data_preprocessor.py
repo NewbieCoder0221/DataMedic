@@ -71,18 +71,19 @@ class DataCleaner(DataInspector):
         return self._data
 
     def fix_missing(self):
-    numeric_cols = self._data.select_dtypes(include="number").columns
+        numeric_cols = self._data.select_dtypes(include="number").columns
 
-    for col in numeric_cols:
-        mean_val = self._data[col].mean()  # always float
-        if pd.api.types.is_integer_dtype(self._data[col]) and mean_val.is_integer():
-            fill_value = int(mean_val)
-        else:
-            fill_value = mean_val
+        for col in numeric_cols:
+            mean_val = self._data[col].mean()  # always float
+            if pd.api.types.is_integer_dtype(self._data[col]) and mean_val.is_integer():
+                fill_value = int(mean_val)
+            else:
+                fill_value = mean_val
         # safer assignment without inplace
-        self._data[col] = self._data[col].fillna(fill_value)
+            self._data[col] = self._data[col].fillna(fill_value)
 
-    self._fix_log.append("Missing values filled.")
+        self._fix_log.append("Missing values filled.")
+
 
 
 
