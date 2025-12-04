@@ -7,7 +7,7 @@ Designed for quick data quality checks, automated cleaning, and report generatio
 
 ## 📌 Project Overview
 
-DataMedic provides a simple workflow for handling messy datasets.  
+CleanOps provides a simple workflow for handling messy datasets.  
 It includes tools for:
 
 - Detecting missing values  
