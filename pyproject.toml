@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "datamedic"
+name = "cleanops"
 version = "0.1.0"
 description = "A lightweight data cleaning and inspection toolkit."
 readme = "README.md"
