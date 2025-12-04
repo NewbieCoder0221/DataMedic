@@ -1,30 +1,28 @@
-[project]
-name = "datamedic"
-version = "0.1.0"
-description = "DataMedic: A simple data cleaning, fixing, and visualization toolkit."
-authors = [
-    { name = "Jave Melchor P. Odchigue",
-              "Sodais M. Angni",
-              "Rynzo Rapheal R. Ruiz",
-              "Harold Hope Magtrayo",
-              "Reymart Padillo"}
-]
-
 [build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datamedic"                # ← PULIHI ug unique name
+version = "0.1.0"
+description = "A lightweight data cleaning and inspection toolkit."
 readme = "README.md"
 requires-python = ">=3.8"
-license = { file = "MIT" }
-keywords = ["data-cleaning", "pandas", "visualization", "eda", "pipeline"]
 
-dependencies = [
-    "pandas",
-    "numpy",
-    "matplotlib",
-    "seaborn",
-    "scikit-learn",
-    "pathlib"
+authors = [
+  { name = "Odchigue, Jave Melchor P."
+           "Angni, Sodais M.",
+           "Ruiz, Rynzo Rapheal R.",
+           "Padillo, Reymart",
+           "Magtrayo, Harold Hope"}
 ]
 
-[project.urls]
-Homepage = "https://github.com/odchigue25206/DataMedic"
-Repository = "https://github.com/odchigue25206/DataMedic"
+dependencies = [
+    "pandas"
+]
+
+license = {text = "MIT"}
+
+[tool.setuptools]
+package-data = {}
+packages = ["datamedic"]
