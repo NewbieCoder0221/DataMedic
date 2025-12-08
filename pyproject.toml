@@ -28,5 +28,5 @@ package-dir = {"" = "src"}
 packages = { find = { where = ["src"] } }
 
 [project.urls]
-Homepage = "https://github.com/odchigue25206/DataMedic"
-Repository = "https://github.com/odchigue25206/DataMedic"
+Homepage = "https://github.com/odchigue25206/CleanOps"
+Repository = "https://github.com/odchigue25206/CleanOps"
