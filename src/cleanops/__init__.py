@@ -3,7 +3,7 @@ from .data_preprocessor import DataInspector, DataCleaner, DataOrganizer
 from .data_output import DataExporter, ReportGenerator, DataOutput
 from .data_pipeline import DataPipeline
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 __all__ = [
     "DataGetter",
