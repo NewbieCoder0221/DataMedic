@@ -66,13 +66,17 @@ class DataCleaner(DataInspector):
         issues = self.inspect()
         suggestions: Dict[str, list[str]] = {}
 
+        # Missing values
         for col, count in issues['missing'].items():
             if count > 0:
                 suggestions[col] = [f"{count} missing values"]
 
-        if issues['duplicates'] > 0:
-            suggestions["Dataset"] = [f"{issues['duplicates']} duplicate rows"]
+        # Duplicates (issues['duplicates'] is a dict)
+        if len(issues['duplicates']) > 0:
+            for col, msg in issues['duplicates'].items():
+                suggestions[col] = suggestions.get(col, []) + [msg]
 
+        # Outliers
         for col, count in issues['outliers'].items():
             if count > 0:
                 suggestions[col] = suggestions.get(col, []) + [f"{count} outliers detected"]
